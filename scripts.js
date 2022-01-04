@@ -40,6 +40,7 @@ app.controller('searchController', ($scope, $http) => {
 		if ($scope.search) {
 			config.params.nameStartsWith = $scope.search;
 		}
+		$scope.selectCharacter(null);
 		$scope.getCharacters(config);
 	};
 
