@@ -1,0 +1,19 @@
+@use '../base';
+
+md-input-container {
+  margin: 0;
+  top: 18px;
+
+  .md-input {
+    color: base.$white;
+  }
+
+  &:not(.md-input-invalid).md-input-focused {
+    .md-input {
+      border-color: base.$white;
+    }
+    label {
+      color: base.$white;
+    }
+  }
+}

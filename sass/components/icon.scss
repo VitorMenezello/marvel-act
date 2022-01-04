@@ -1,0 +1,19 @@
+@use '../base';
+
+.icon {
+  border-radius: 50%;
+  background: base.$red;
+  padding: 2px;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: default;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.text-overlay {
+  border-radius: 14px;
+  background: base.$red;
+  padding: 3px 10px;
+}

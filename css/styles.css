@@ -1,0 +1,142 @@
+.icon {
+  border-radius: 50%;
+  background: #ED1D24;
+  padding: 2px;
+  cursor: pointer;
+}
+.icon.disabled {
+  cursor: default;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.text-overlay {
+  border-radius: 14px;
+  background: #ED1D24;
+  padding: 3px 10px;
+}
+
+md-input-container {
+  margin: 0;
+  top: 18px;
+}
+md-input-container .md-input {
+  color: #FFFFFF;
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+  border-color: #FFFFFF;
+}
+md-input-container:not(.md-input-invalid).md-input-focused label {
+  color: #FFFFFF;
+}
+
+md-progress-circular {
+  margin: 16px;
+}
+md-progress-circular path {
+  stroke: #FFFFFF;
+}
+
+body {
+  overflow: hidden;
+  background: #222222;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #ED1D24;
+}
+
+#main {
+  width: 100%;
+  overflow: auto;
+}
+#main .content {
+  flex-direction: column;
+}
+#main #list {
+  display: flex;
+  align-items: self-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+  height: 100%;
+  width: 100%;
+}
+
+#paginator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+#info {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background: #333333;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+#info img {
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+#info #info-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+#info #info-text .info-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#info #info-text .text {
+  font-size: 14px;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.char-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(25% - 12px);
+  background: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.char-card img {
+  height: 180px;
+}
+.char-card h3 {
+  margin: 12px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+@use '../base';
+
+md-progress-circular {
+	margin: 16px;
+
+	path {
+		stroke: base.$white;
+	}
+}
