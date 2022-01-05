@@ -1,12 +1,12 @@
 @use '../base';
-@use 'width';
+@use '../width';
 
 .character-title {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 10px;
-  margin: 16px 0;
+  margin-bottom: 16px;
 }
 
 .character-info {
