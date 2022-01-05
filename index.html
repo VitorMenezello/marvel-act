@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>MARVEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
@@ -28,7 +29,7 @@
     <div id="main">
     	<div class="content" ng-if="!selectedCharacter">
     		<md-progress-circular ng-if="loading" md-mode="indeterminate"></md-progress-circular>
-    		<div id="list" ng-if="!loading">
+    		<div class="list" ng-if="!loading">
 					<div ng-repeat="character in characters" class="char-card" ng-click="selectCharacter(character)">
 	    			<img ng-src="{{characterImage(character)}}" />
 	    			<h3>{{ character.name }}</h2>
@@ -44,26 +45,26 @@
     	</div>
 
 	    <div class="content" ng-if="selectedCharacter">
-	    	<div id="title">
+	    	<div class="character-title">
 	  			<img src="./assets/chevron-left.png" class="icon" ng-click="selectCharacter(null)" alt="Return" />
 	  			<div class="text-overlay">
 	    			{{ selectedCharacter.name }}
 	    		</div>
 	    	</div>
-	    	<div id="info">
+	    	<div class="character-info">
     			<img ng-src="{{characterImage(selectedCharacter)}}" />
-    			<div id="info-text">
+    			<div class="info">
   					<div class="info-title">
   						Descrição:
   					</div>
-    				<div class="text">
+    				<div class="info-text">
     					{{ selectedCharacter.description || 'Sem descrição' }}
     				</div>
     				<div style="margin-top: 8px;">
     					<div class="info-title">
     						Quadrinhos:
     					</div>
-    					<span class="text">
+    					<span class="info-text">
     						{{ characterComics(selectedCharacter) }}
     					</span>
     				</div>

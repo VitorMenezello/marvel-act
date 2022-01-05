@@ -1,0 +1,44 @@
+@use '../base';
+@use 'width';
+
+.list {
+	display: flex;
+  align-items: self-start;
+	flex-wrap: wrap;
+	gap: 16px;
+  margin-bottom: 16px;
+	height: 100%;
+  width: 100%;
+
+  .char-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: base.$grey;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+
+    @media all and (min-width: width.$tablet-min) {
+      width: calc(50% - 8px);
+    }
+
+    @media all and (min-width: width.$pc-min) {
+      width: calc(33% - 8px);
+    }
+
+    @media all and (min-width: width.$large-pc-min) {
+      width: calc(25% - 12px);
+    }
+
+    img {
+      height: 180px;
+    }
+
+    h3 {
+      margin: 12px;
+    }
+  }
+}

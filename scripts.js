@@ -20,7 +20,7 @@ app.controller('searchController', ($scope, $http) => {
 	};
 
 	$scope.pageTotal = () => {
-		return `${$scope.page * $scope.pageSize + 1} a ${Math.min(($scope.page + 1) * $scope.pageSize, $scope.total)} de ${$scope.total}`;
+		return `${$scope.page * $scope.pageSize + $scope.total ? 1 : 0} a ${Math.min(($scope.page + 1) * $scope.pageSize, $scope.total)} de ${$scope.total}`;
 	}
 
 	$scope.changePage = (pageChange) => {
